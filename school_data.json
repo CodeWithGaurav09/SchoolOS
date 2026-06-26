@@ -1,0 +1,76 @@
+{
+    "students": [
+        {
+            "name": "Akarsh",
+            "age": 24,
+            "email": "akarshvyas@gmail.com",
+            "roll_no": "1",
+            "grades": {
+                "Maths": 90.0
+            }
+        },
+        {
+            "name": "Harsh",
+            "age": 23,
+            "email": "harsh@gmail.com",
+            "roll_no": "2",
+            "grades": {
+                "math": 76.0
+            }
+        },
+        {
+            "name": "Gaurav More",
+            "age": 21,
+            "email": "gaurav@gmail.com",
+            "roll_no": "52",
+            "grades": {
+                "Maths": 98.0
+            }
+        },
+        {
+            "name": "Tanvi More",
+            "age": 20,
+            "email": "tanvi@gmail.com",
+            "roll_no": "54",
+            "grades": {
+                "Maths": 95.0,
+                "Data Science": 90.0,
+                "Machine Learning": 85.0,
+                "Artificial Intelligence": 80.0,
+                "Healthcare": 75.0
+            }
+        },
+
+        {
+            "name": "Vaibhav",
+            "age": 18,
+            "email": "vaibhav@gmail.com",
+            "roll_no": "7",
+            "grades": {}
+        }
+    ],
+    "teachers": [
+        {
+            "name": "harsh bhaiya",
+            "age": 25,
+            "email": "harsh@gmail.com",
+            "subject": "Maths",
+            "emp_id": "1"
+        },
+        {
+            "name": "Gaurav More",
+            "age": 26,
+            "email": "gaurav@gmail.com",
+            "subject": "Data Science",
+            "emp_id": "2"
+        },
+        {
+            "name": "Gauri More",
+            "age": 26,
+            "email": "gauri@gmail.com",
+            "subject": "Machine Learning",
+            "emp_id": "3"
+        }
+
+    ]
+}
