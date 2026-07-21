@@ -1,135 +1,66 @@
-# 🏫 SchoolOS - School Management System
+# NYC School Management App
 
-A modern and interactive School Management System built using **Python** and **Streamlit**. The application provides an easy way to manage students, teachers, grades, and school statistics through a clean dashboard interface.
+A simple NYC school management system built with Streamlit and a small CLI fallback. The app tracks students, teachers, and grades using a local JSON data file.
 
----
+## Project Structure
 
-## ✨ Features
+- `NYC-Management-App-main/app.py` - Main Streamlit dashboard and user interface for registering students and teachers, adding grades, and viewing details.
+- `NYC-Management-App-main/main.py` - Command-line interaction script for basic student and teacher registration, grade entry, and detail lookup.
+- `NYC-Management-App-main/school_data.json` - Local JSON storage for registered students, teachers, and grades.
 
-### 📊 Dashboard
-- School statistics
-- Total students
-- Total teachers
-- Total grades
-- School average marks
-- Recent student list
-- Faculty overview
+## Features
 
-### 👨‍🎓 Student Management
-- Register new students
-- Email validation
-- Duplicate roll number prevention
-- View student details
-- Student performance tracking
+- Student registration with name, age, email, and roll number
+- Teacher registration with name, age, email, subject, and employee ID
+- Add grades for registered students
+- View student details and average score
+- View teacher details and subject assignments
+- Streamlit dashboard with a polished UI and summary statistics
 
-### 👩‍🏫 Teacher Management
-- Register teachers
-- Employee ID validation
-- Subject management
-- View teacher profiles
+## Requirements
 
-### 📝 Grade Management
-- Add subject-wise grades
-- Automatic average calculation
-- Student performance overview
+- Python 3.8+
+- `streamlit`
 
-### 💾 Data Storage
-- JSON-based database
-- Automatic save/load functionality
+## Installation
 
-### 🎨 Modern UI
-- Beautiful custom CSS
-- Responsive layout
-- Professional dashboard
-- Clean sidebar navigation
-
----
-
-## 🛠️ Technologies Used
-
-- Python 3
-- Streamlit
-- JSON
-- HTML/CSS
-- Object-Oriented Programming (OOP)
-
----
-
-## 📂 Project Structure
-
-```
-SchoolOS/
-│
-├── app.py
-├── school_data.json
-├── README.md
-├── requirements.txt
-└── assets/
-```
-
----
-
-## 🚀 Installation
-
-Clone the repository
+1. Open a terminal in the project folder.
+2. Install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/SchoolOS.git
+pip install streamlit
 ```
 
-Move into the project
+## Run the Streamlit app
+
+From the outer project root:
 
 ```bash
-cd SchoolOS
+streamlit run NYC-Management-App-main/app.py
 ```
 
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application
+Or from inside `NYC-Management-App-main/NYC-Management-App-main`:
 
 ```bash
 streamlit run app.py
 ```
 
----
+Then open the local Streamlit URL shown in the terminal.
 
-## 📸 Features Preview
+## Run the CLI script
 
-- Dashboard
-- Student Registration
-- Teacher Registration
-- Grade Management
-- Student Details
-- Teacher Details
+From the inner project folder:
 
----
+```bash
+python main.py
+```
 
-## 📈 Future Improvements
+## Data Storage
 
-- SQLite/MySQL Database
-- Login Authentication
-- Attendance Management
-- Fee Management
-- Exam Module
-- Report Cards
-- Data Export (PDF/Excel)
-- Admin Panel
-- Charts & Analytics
+The app stores all records in `NYC-Management-App-main/school_data.json`.
 
----
+## Notes
 
-## 👨‍💻 Author
-
-**Gaurav More**
-
-Engineering Student | Python Developer | AI Enthusiast
-
----
-
-## ⭐ Support
-
-If you found this project helpful, don't forget to ⭐ star this repository.
+- Email validation is basic and checks only for `@` and `.` characters.
+- All data is stored locally in a JSON file, so the app is best for demos and small testing scenarios.
+- The Streamlit app provides a nicer UI, while `main.py` supports quick terminal-based operations.
